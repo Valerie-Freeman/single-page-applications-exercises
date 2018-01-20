@@ -7,7 +7,7 @@ let remove = document.getElementById("delete");
 // document.removeChild(element)
 
 create.addEventListener("click", function() {
-    output.innerHTML += `<div class="card">${input.value}<button id="delete">Delete</button></div>`;
+    output.innerHTML += `<div class="card"><p>${input.value}</p><button id="delete">Delete</button></div>`;
     console.log("input", input.value);
     input.value = "";
 });
