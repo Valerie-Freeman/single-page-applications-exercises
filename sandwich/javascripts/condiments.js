@@ -8,7 +8,6 @@ let condPrices = {
     siracha: 0.50
 }; 
 
-module.exports.addCond = (condSelection) => {
-    let price = condPrices[condSelection];
-    return price;
+module.exports.addCond = (choices, fn) => {
+    return fn(condPrices, choices);
 };

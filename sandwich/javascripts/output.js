@@ -31,3 +31,7 @@ let ingredientsObj = {bread, ingredients};
 module.exports.printForm = () => {
     $("#orderForm").append(ingredientTemplate(ingredientsObj));
 };
+
+module.exports.printOrder = (price) => {
+    $("#order").text(`Total: $${price}`);
+};

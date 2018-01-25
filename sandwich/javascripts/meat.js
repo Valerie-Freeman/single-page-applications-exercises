@@ -8,8 +8,7 @@ let meatPrices = {
     bacon: 0.50
 }; 
 
-module.exports.addMeat = (meatSelection) => {
-    let price = meatPrices[meatSelection];
-    return price;
+module.exports.addMeat = (choices, fn) => {
+    return fn(meatPrices, choices);
 };
 
