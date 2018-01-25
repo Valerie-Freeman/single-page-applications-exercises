@@ -29,7 +29,5 @@ let ingredients = [
 let ingredientsObj = {bread, ingredients};
 
 module.exports.printForm = () => {
-    console.log("printForm working");
-    console.log(ingredientsObj);
     $("#orderForm").append(ingredientTemplate(ingredientsObj));
 };
